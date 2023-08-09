@@ -1,14 +1,18 @@
 // Write your code here
-import {Component} from 'react'
 import './index.css'
 
 const TodoItem = props => {
-  const {todoList} = props
-  const {title} = todoList
+  const {todoList, onDelete} = props
+  const {title, id} = todoList
+
+  const deleteTodo = () => {
+    console.log('Hi')
+    onDelete(id)
+  }
   return (
     <li className="todo-item-list-container">
       <p>{title}</p>
-      <button type="button" className="delete-btn-style">
+      <button type="button" className="delete-btn-style" onClick={deleteTodo}>
         Delete
       </button>
     </li>
