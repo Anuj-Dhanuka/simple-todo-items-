@@ -1,0 +1,25 @@
+/* Write your CSS here */
+.simple-todo-bg-container {
+  background-color: #ffc2a0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.simple-todo-inner-container {
+  background-color: #ffffff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.simple-todo-title {
+  color: #ff8542;
+  font-family: Roboto;
+  text-align: center;
+}
